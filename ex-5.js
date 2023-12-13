@@ -1,5 +1,6 @@
-function sum() {
-  // Start coding here !
+function sum(...rest) {
+  let total = (accumulator, currentValue) => accumulator + currentValue;
+  return rest.reduce(total, 0);
 }
 
 let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);
